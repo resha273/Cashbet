@@ -1,31 +1,48 @@
-<!-- نموذج السحب -->
-<h2>نموذج السحب</h2>
-<label for="withdrawApp">اختر التطبيق الذي تسحب منه:</label>
-<select id="withdrawApp" name="withdrawApp" onchange="showPopup()">
-  <option value="">-- اختر --</option>
-  <option value="DBBET">DB BET</option>
-  <option value="1XBET">1XBET</option>
-  <option value="MELBET">MELBET</option>
-  <option value="WINWIN">WINWIN</option>
-  <option value="XPARIBET">XPARI BET</option>
-</select>
-<div id="popup" style="display:none; padding:10px; border:1px solid #ccc; margin-top:10px;">
-  <span style="cursor:pointer;" onclick="hidePopup()">✖</span>
-  <p><strong>اسم المدينة:</strong> Khusus</p>
-  <p><strong>اسم الشارع:</strong> babaElmagal(wallet)</p>
-</div>
-<label for="withdrawCode">قم بإرسال كود السحب هنا:</label>
-<input type="text" id="withdrawCode" name="withdrawCode" placeholder="ادخل كود السحب" required>
-<label for="withdrawScreenshot">ارفق صورة لعملية التحويل:</label>
-<input type="file" id="withdrawScreenshot" name="withdrawScreenshot" accept="image/*">
-<p>التحويل إلى فودافون كاش على الرقم: <strong>01066070695</strong></p>
-<script>
-  function showPopup() {
-    var sel = document.getElementById("withdrawApp").value;
-    document.getElementById("popup").style.display = sel ? "block" : "none";
-  }
-  function hidePopup() {
-    document.getElementById("popup").style.display = "none";
-    document.getElementById("withdrawApp").value = "";
-  }
-</script>
+<section>
+  <h2>طلب سحب</h2>
+  <form>
+    <label>اسمك:</label>
+    <input type="text" required />
+
+    <label>رقم حسابك على الموقع:</label>
+    <input type="text" required />
+
+    <label>المبلغ المطلوب سحبه:</label>
+    <input type="number" required />
+
+    <label>رقم المحفظة المستلمة:</label>
+    <input type="text" required />
+
+    <label>نوع المحفظة:</label>
+    <select required>
+      <option value="">-- اختر --</option>
+      <option>فودافون كاش</option>
+      <option>اتصالات كاش</option>
+      <option>بايير</option>
+      <option>USDT</option>
+    </select>
+
+    <!-- ✅ اختيار التطبيق -->
+    <label>اختر التطبيق الذي تريد السحب منه:</label>
+    <select id="app-select" onchange="toggleAppInfo()" required>
+      <option value="">-- اختر --</option>
+      <option value="DB BET">DB BET</option>
+      <option value="1XBET">1XBET</option>
+      <option value="MELBET">MELBET</option>
+      <option value="WINWIN">WINWIN</option>
+      <option value="XPARI BET">XPARI BET</option>
+    </select>
+
+    <!-- ✅ المعلومات المنبثقة للتطبيق -->
+    <div id="app-info" style="display:none; background:#f9f9f9; border:1px solid #ccc; padding:10px; margin-top:10px; border-radius:8px; position:relative;">
+      <span style="position:absolute; top:5px; left:10px; cursor:pointer; color:red;" onclick="document.getElementById('app-info').style.display='none'">X</span>
+      <p><strong>اسم المدينة:</strong> Khusus</p>
+      <p><strong>اسم الشارع:</strong> babaElmagal(wallet)</p>
+    </div>
+
+    <!-- ✅ خانة كود السحب -->
+    <label>قم بإرسال كود السحب هنا:</label>
+    <input type="text" required />
+
+    <!-- ✅ رفع صورة (سكرين شوت) -->
+    <label>أرفق صورة لعملية الت
