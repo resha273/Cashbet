@@ -1,0 +1,187 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>وكيل سحب وإيداع</title>
+  <style>
+    body {
+      font-family: 'Tahoma', sans-serif;
+      background: #f2f2f2;
+      margin: 0;
+      padding: 0;
+      direction: rtl;
+    }
+    header {
+      background: #2e2e2e;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    section {
+      padding: 20px;
+      max-width: 700px;
+      margin: auto;
+      background: white;
+      margin-top: 20px;
+      border-radius: 10px;
+    }
+    h2 {
+      color: #333;
+    }
+    input, select, textarea, button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      background: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #45a049;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      color: #777;
+    }
+    .contact {
+      text-align: center;
+    }
+    .wallet-cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+    }
+    .wallet-card {
+      background: white;
+      border: 1px solid #ccc;
+      border-radius: 12px;
+      width: 150px;
+      padding: 15px;
+      text-align: center;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+    .wallet-card img {
+      width: 50px;
+      height: 50px;
+      object-fit: contain;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>وكيل سحب وإيداع معتمد</h1>
+    <p>متاح 24 ساعة لخدمتكم</p>
+  </header>
+
+  <section>
+    <h2>أرقام المحافظ للتحويل</h2>
+    <div class="wallet-cards">
+      <div class="wallet-card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Vodafone_2017_logo.svg/1200px-Vodafone_2017_logo.svg.png" alt="Vodafone" />
+        <p><strong>فودافون كاش</strong></p>
+        <p>01066070695</p>
+      </div>
+      <div class="wallet-card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/79/Etisalat_Logo.png" alt="Etisalat" />
+        <p><strong>اتصالات كاش</strong></p>
+        <p>01124725116</p>
+      </div>
+      <div class="wallet-card">
+        <img src="https://cryptologos.cc/logos/payeer-logo.png" alt="Payeer" />
+        <p><strong>بايير</strong></p>
+        <p>P12345678</p>
+      </div>
+      <div class="wallet-card">
+        <img src="https://cryptologos.cc/logos/tether-usdt-logo.png" alt="USDT" />
+        <p><strong>USDT TRC20</strong></p>
+        <p>TX7xyzabc1234567890</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>طلب سحب</h2>
+    <form>
+      <label>اسمك:</label>
+      <input type="text" required />
+
+      <label>رقم حسابك على الموقع:</label>
+      <input type="text" required />
+
+      <label>المبلغ المطلوب سحبه:</label>
+      <input type="number" required />
+
+      <label>رقم المحفظة المستلمة:</label>
+      <input type="text" required />
+
+      <label>نوع المحفظة:</label>
+      <select>
+        <option>فودافون كاش</option>
+        <option>اتصالات كاش</option>
+        <option>بايير</option>
+        <option>USDT</option>
+      </select>
+
+      <label>اختر التطبيق الذي تريد السحب منه:</label>
+      <select id="app-select" onchange="toggleAppInfo()" required>
+        <option value="">-- اختر --</option>
+        <option value="DB BET">DB BET</option>
+        <option value="1XBET">1XBET</option>
+        <option value="MELBET">MELBET</option>
+        <option value="WINWIN">WINWIN</option>
+        <option value="XPARI BET">XPARI BET</option>
+      </select>
+
+      <div id="app-info" style="display:none; background:#f9f9f9; border:1px solid #ccc; padding:10px; margin-top:10px; border-radius:8px; position:relative;">
+        <span style="position:absolute; top:5px; left:10px; cursor:pointer; color:red;" onclick="document.getElementById('app-info').style.display='none'">X</span>
+        <p><strong>اسم المدينة:</strong> Khusus</p>
+        <p><strong>اسم الشارع:</strong> babaElmagal(wallet)</p>
+      </div>
+
+      <label>قم بإرسال كود السحب هنا:</label>
+      <input type="text" required />
+
+      <label>أرفق صورة لعملية التحويل (سكرين شوت):</label>
+      <input type="file" accept="image/*" />
+
+      <button type="submit">إرسال الطلب</button>
+    </form>
+  </section>
+
+  <section>
+    <h2>تواصل معنا</h2>
+    <div class="contact">
+      <p>واتساب: <a href="https://wa.me/201124725116" target="_blank">اضغط هنا</a></p>
+      <p>تيليجرام: <a href="https://t.me/username" target="_blank">t.me/username</a></p>
+    </div>
+  </section>
+
+  <footer>
+    جميع الحقوق محفوظة &copy; 2025
+  </footer>
+
+  <script>
+    function toggleAppInfo() {
+      const selected = document.getElementById('app-select').value;
+      const info = document.getElementById('app-info');
+      if (selected) {
+        info.style.display = 'block';
+      } else {
+        info.style.display = 'none';
+      }
+    }
+  </script>
+</body>
+</html>
