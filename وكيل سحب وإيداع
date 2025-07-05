@@ -1,0 +1,132 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: https://resha273.github.io/Cashbet/
+Subject: =?utf-8?Q?=D9=88=D9=83=D9=8A=D9=84=20=D8=B3=D8=AD=D8=A8=20=D9=88=D8=A5=D9?=
+ =?utf-8?Q?=8A=D8=AF=D8=A7=D8=B9?=
+Date: Sat, 5 Jul 2025 07:09:30 +0300
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--NbUEyeyI8w7jgbG60DHPiRlUqTRuQMpLSVCEFvGWwA----"
+
+
+------MultipartBoundary--NbUEyeyI8w7jgbG60DHPiRlUqTRuQMpLSVCEFvGWwA----
+Content-Type: text/html
+Content-ID: <frame-8685693534D18775C919E2B1A42E4233@mhtml.blink>
+Content-Transfer-Encoding: binary
+Content-Location: https://resha273.github.io/Cashbet/
+
+<!DOCTYPE html><html lang="ar" dir="rtl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link rel="stylesheet" type="text/css" href="cid:css-678eedad-247c-4f16-a1c6-5491dda40283@mhtml.blink" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>وكيل سحب وإيداع</title>
+  
+</head>
+<body>
+  <header>
+    <h1>وكيل سحب وإيداع معتمد</h1>
+    <p>متاح 24 ساعة لخدمتكم</p>
+  </header>
+
+  <section>
+    <h2>أرقام المحافظ للتحويل</h2>
+    <div class="wallet-info">
+      <p><strong>فودافون كاش:</strong> 01124725116</p>
+      <p><strong>اتصالات كاش:</strong> 01124725116</p>
+      <p><strong>بايير:</strong> P12345678</p>
+      <p><strong>USDT TRC20:</strong> TX7xyzabc1234567890</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>طلب إيداع</h2>
+    <form>
+      <label>اسمك:</label>
+      <input type="text" required="">
+      <label>رقم حسابك على الموقع:</label>
+      <input type="text" required="">
+      <label>المبلغ المطلوب إيداعه:</label>
+      <input type="number" required="">
+      <label>وسيلة التحويل:</label>
+      <select>
+        <option>فودافون كاش</option>
+        <option>اتصالات كاش</option>
+        <option>بايير</option>
+        <option>USDT</option>
+      </select>
+      <label>التطبيق الذي تريد الشحن عليه:</label>
+      <select>
+        <option>DB BET</option>
+        <option>1XBET</option>
+        <option>MELBET</option>
+        <option>XPARIBET</option>
+        <option>WINWIN</option>
+      </select>
+      <button type="submit">إرسال الطلب</button>
+    </form>
+  </section>
+
+  <section>
+    <h2>طلب سحب</h2>
+    <form>
+      <label>اسمك:</label>
+      <input type="text" required="">
+      <label>رقم حسابك على الموقع:</label>
+      <input type="text" required="">
+      <label>المبلغ المطلوب سحبه:</label>
+      <input type="number" required="">
+      <label>رقم المحفظة المستلمة:</label>
+      <input type="text" required="">
+      <label>نوع المحفظة:</label>
+      <select>
+        <option>فودافون كاش</option>
+        <option>اتصالات كاش</option>
+        <option>بايير</option>
+        <option>USDT</option>
+      </select>
+      <button type="submit">إرسال الطلب</button>
+    </form>
+  </section>
+
+  <section>
+    <h2>تواصل معنا</h2>
+    <div class="contact">
+      <p>واتساب: <a href="https://wa.me/201124725116" target="_blank">اضغط هنا</a></p>
+      <p>تيليجرام: <a href="https://t.me/username" target="_blank">t.me/username</a></p>
+    </div>
+  </section>
+
+  <footer>
+    جميع الحقوق محفوظة © 2025
+  </footer>
+
+
+</body></html>
+------MultipartBoundary--NbUEyeyI8w7jgbG60DHPiRlUqTRuQMpLSVCEFvGWwA----
+Content-Type: text/css
+Content-Transfer-Encoding: binary
+Content-Location: cid:css-678eedad-247c-4f16-a1c6-5491dda40283@mhtml.blink
+
+@charset "utf-8";
+
+body { font-family: Tahoma, sans-serif; background: rgb(242, 242, 242); margin: 0px; padding: 0px; direction: rtl; }
+
+header { background: rgb(46, 46, 46); color: white; padding: 20px; text-align: center; }
+
+section { padding: 20px; max-width: 700px; margin: 20px auto auto; background: white; border-radius: 10px; }
+
+h2 { color: rgb(51, 51, 51); }
+
+input, select, textarea, button { width: 100%; padding: 10px; margin-top: 10px; margin-bottom: 20px; border: 1px solid rgb(204, 204, 204); border-radius: 5px; }
+
+button { background: rgb(76, 175, 80); color: white; border: none; cursor: pointer; }
+
+button:hover { background: rgb(69, 160, 73); }
+
+footer { text-align: center; padding: 20px; font-size: 14px; color: rgb(119, 119, 119); }
+
+.contact { text-align: center; }
+
+.wallet-info { background: rgb(249, 249, 249); border: 1px solid rgb(204, 204, 204); padding: 15px; margin-top: 10px; border-radius: 10px; }
+
+.wallet-info p { margin: 5px 0px; }
+------MultipartBoundary--NbUEyeyI8w7jgbG60DHPiRlUqTRuQMpLSVCEFvGWwA------
